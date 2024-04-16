@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+    /* You can also host the font files locally and provide the path instead of the URL */
+}
+
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+
+.container {
+    font-family: 'Nunito', Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #ffffff; 
+    height: 60vh;
+    overflow: auto;
+    box-sizing: border-box; 
+    padding: 15px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+    overflow-y: hidden;
+}
+
+
+h1 {
+    font-family: 'Nunito', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+p {
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(41, 41, 41);
+    font-family: 'Nunito', Arial, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Nunito', Arial, sans-serif;
+
+}
+
+label {
+    font-family: 'Nunito', Arial, sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    font-family: 'Nunito', Arial, sans-serif;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+button {
+    font-family: 'Nunito', Arial, sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    margin-top: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    /* Center the button horizontally */
+    display: block;
+    /* Ensure the button is displayed as a block element */
+}
+
+
+button:hover {
+    font-family: 'Nunito', Arial, sans-serif;
+    background-color: #45a049;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+}
+
+
+.my-dropdown-menu {
+    width: 150px; /* Adjust the width as per your requirement */
+}

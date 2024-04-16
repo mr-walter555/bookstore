@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "sweetalert2": "^11.10.7",
+    "viewerjs": "^1.11.6"
+  }
+}

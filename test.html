@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="view-document-btn">View Document</button>
+    <div id="document-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // Get reference to the button and the document container
+    const viewDocumentBtn = document.getElementById('view-document-btn');
+    const documentContainer = document.getElementById('document-container');
+
+    // Add event listener to the button
+    viewDocumentBtn.addEventListener('click', function() {
+        // Create an iframe element
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'document.html');
+        iframe.setAttribute('frameborder', '0');
+        iframe.style.width = '100%';
+        iframe.style.height = '100vh';
+
+        // Clear existing content in the document container
+        documentContainer.innerHTML = '';
+
+        // Append the iframe to the document container
+        documentContainer.appendChild(iframe);
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+    body {
+        font-family: 'Nunito', sans-serif;
+        /* Change font-family to Nunito */
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        background-color: #fff;
+        color: #333;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: lightgray 1px solid;
+        font-family: 'Nunito', sans-serif;
+
+    }
+
+    .navbar h1 {
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+
+    }
+
+    .profile {
+        display: flex;
+        font-family: 'Nunito', sans-serif;
+
+        align-items: center;
+    }
+
+    .profile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .dashboard-container {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: calc(100vh - 40px);
+        position: fixed;
+        left: 0;
+        background-color: #fff;
+        color: #333;
+        padding-top: 20px;
+        border-right: lightgray 1px solid;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar a {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        color: #333;
+        text-decoration: none;
+        margin-bottom: 5px;
+        font-family: 'Nunito', sans-serif;
+
+    }
+
+    .sidebar a:hover {
+        background-color: #4CAF50;
+        color: #fafafa;
+        text-decoration: none !important;
+
+    }
+
+    .content {
+        margin-left: 250px;
+        padding: 20px;
+        flex: 1;
+        background-color: #f2f2f2;
+        overflow-y: auto;
+        height: 90vh;
+    }
+
+    .page {
+        display: none;
+    }
+
+    .page.active {
+        display: block;
+    }
+
+    .logout {
+        text-decoration: none;
+        color: #333;
+        position: absolute;
+        bottom: 60px;
+        left: 20px;
+        padding: 10px 20px;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: none;
+        z-index: 1000;
+        margin-top: 20px;
+        width: 20%;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 10px 15px;
+        color: #333;
+        text-decoration: none;
+        font-family: 'Nunito', sans-serif;
+
+        /* Remove default text decoration */
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .dropdown-menu.active {
+        display: block;
+    }
+
+    .dropdown-toggle {
+        cursor: pointer;
+    }
+
+    .pending-tasks-container {
+        background-color: #4CAF50;
+        border-radius: 20px;
+        padding: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        display: inline-block;
+        width: 250px;
+        /* Adjust the width as needed */
+    }
+
+    .pending-tasks-container img {
+        width: 40px;
+    }
+
+    .pending-tasks-container h2,
+    .pending-tasks-container h4 {
+        color: #fff;
+        margin: 0;
+    }
+
+    /* Add your CSS styles here */
+    .nav-tabs-bottom {
+        margin-bottom: 15px;
+    }
+
+    .tab-content {
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-top: none;
+        background-color: white;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .tab-container {
+        background-color: white;
+
+    }
+
+    .nav-link {
+        color: black;
+    }
+
+   
+
+    
+.table-responsive p {
+    font-family: 'Nunito', sans-serif;
+
+}
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid with minimum width */
+    gap: 20px; /* Spacing between grid items */
+}
+
+.book-item {
+    border: 1px solid #ddd; /* Border for each grid item */
+    padding: 10px; /* Padding inside each grid item */
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Spacing between book cover and text */
+}
+/* Hide the text editor container initially */
+#textEditor {
+    display: none;
+}
+
+
+
+.edit-icon {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+}
